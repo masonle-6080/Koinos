@@ -1,14 +1,13 @@
 import {Text, View} from 'react-native'
+import {styles} from '../styles'
 import Navbar from '../components/Navbar'
 
-import {styles} from '../styles'
-
-export default function Root() {
-    return (
+export default function List() {
+    return(
         <View style={styles.container}>
-            <Text style={styles.text, styles.title}>home</Text>
-
+            <Text style={styles.text, styles.title}>list</Text> 
             <Navbar></Navbar>
+
         </View>
-    );
+    )
 }
